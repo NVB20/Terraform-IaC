@@ -61,4 +61,3 @@ Before using this project, make sure you have:
 - **AWS CLI** installed and configured
   ```bash
   aws configure
- ```
