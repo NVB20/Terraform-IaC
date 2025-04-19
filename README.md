@@ -15,7 +15,7 @@ The Terraform configuration sets up:
 - 🌉 **NAT Gateway** for outbound access from private subnet
 - 💻 **Web EC2 instance** in the public subnet
 - 🗄️ **Database EC2 instance** in the private subnet
-- 🧭 **Custom route tables** with correct subnet associations
+- 🧭 **Custom route tables** with subnet associations
 - 🔒 **Security groups** for web and DB traffic rules
 
 ---
