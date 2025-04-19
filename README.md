@@ -35,3 +35,6 @@ This project sets up a basic AWS infrastructure using Terraform, based on a typi
    ```bash
    terraform destroy
    ```
+
+# make sure to have aws-cli
+# created an iAM user & group for terraform with ful ec2 and vpc access
