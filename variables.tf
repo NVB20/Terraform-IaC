@@ -28,7 +28,7 @@ variable "availability_zone_private" {
   default = "us-east-1b"
 }
 
-#subnets
+#cidr blocks
 variable "public_cidr_block" {
   description = "The CIDR Block for the public Instance"
   type = string
@@ -38,4 +38,14 @@ variable "private_cidr_block" {
   description = "The CIDR Block for the private Instance"
   type = string
   default = "10.0.2.0/24"
+}
+variable "main_vpc_cidr_block" {
+  description = "The CIDR Block for the main vpc"
+  type = string
+  default = "10.0.0.0/16"
+}
+variable "route_table_cidr_block" {
+  description = "The CIDR Block for the route table"
+  type = string
+  default = "0.0.0.0/0"
 }
