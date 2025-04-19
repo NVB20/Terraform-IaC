@@ -1,6 +1,6 @@
 #vpc
 resource "aws_vpc" "main_vpc" {
-  cidr_block = "10.0.0.0/16"
+  cidr_block = var.main_vpc_cidr_block
 }
 
 #internet-gateway
@@ -27,7 +27,7 @@ resource "aws_route_table" "public_rt" {
   vpc_id = aws_vpc.main_vpc.id
 
   route {
-    cidr_block = "0.0.0.0/0"
+    cidr_block = var.route_table_cidr_block
     gateway_id = aws_internet_gateway.igw.id
   }
 }
@@ -41,7 +41,7 @@ resource "aws_route_table" "private_rt" {
   vpc_id = aws_vpc.main_vpc.id
 
   route {
-    cidr_block     = "0.0.0.0/0"
+    cidr_block     = var.route_table_cidr_block
     nat_gateway_id = aws_nat_gateway.nat.id
   }
 }
