@@ -72,5 +72,8 @@ Before using this project, make sure you have:
 
 - This is necessary to authenticate and configure Terraform to interact with your AWS account. It's recommended to create an IAM user with the necessary permissions for managing the resources and use that for authentication.
 ---
-<img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" height="40" alt="terraform logo"  />
+<div style="display: flex; align-items: center;">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" height="40" alt="terraform logo" />
+  <img src="https://www.svgrepo.com/show/353443/aws.svg" alt="AWS Logo" height="40" />
+</div>
+---
