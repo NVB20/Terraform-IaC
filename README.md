@@ -69,4 +69,5 @@ Before using this project, make sure you have:
   ```bash
   aws configure
 
+This is necessary to authenticate and configure Terraform to interact with your AWS account. It's recommended to create an IAM user with the necessary permissions for managing the resources and use that for authentication.
 ---
