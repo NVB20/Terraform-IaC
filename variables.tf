@@ -27,3 +27,15 @@ variable "availability_zone_private" {
   type = string
   default = "us-east-1b"
 }
+
+#subnets
+variable "public_cidr_block" {
+  description = "The CIDR Block for the public Instance"
+  type = string
+  default = "10.0.1.0/24"
+}
+variable "private_cidr_block" {
+  description = "The CIDR Block for the private Instance"
+  type = string
+  default = "10.0.2.0/24"
+}
