@@ -52,6 +52,12 @@ The Terraform configuration sets up:
 | `variables.tf`    | Input variables (e.g., AMI ID, instance type)               |
 | `outputs.tf`      | Output values (e.g., public IPs)                            |
 | `vpc.tf`     | Creates the VPC, public/private subnets, and enables DNS support |
+| `terraform.tfvars`     | Values for the input variables defined in variables.tf |
+
+
+---
+## 📄 terraform.tfvars Explained
+The terraform.tfvars file provides values for input variables, allowing easy customization of deployments.
 
 ---
 
