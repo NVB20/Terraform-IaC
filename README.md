@@ -43,14 +43,14 @@ The Terraform configuration sets up:
 
 ## 📁 Project Structure
 
-| File              | Description                                      |
-|-------------------|--------------------------------------------------|
-| `provider.tf`     | AWS provider configuration                      |
-| `main.tf`         | Core networking and compute resources            |
-| `instances.tf`    | Web and DB EC2 instances                         |
-| `nat_gateway.tf`  | NAT Gateway and Elastic IP                       |
-| `variables.tf`    | Input variables (e.g., AMI ID, instance type)    |
-| `outputs.tf`      | Output values (e.g., public IPs)                 |
+| File              | Description                                                 |
+|-------------------|-------------------------------------------------------------|
+| `provider.tf`     | AWS provider configuration                                  |
+| `instances.tf`    | Web and DB EC2 instances                                    |
+| `security_groups.tf` |	Security group rules for web and DB instances          |
+| `variables.tf`    | Input variables (e.g., AMI ID, instance type)               |
+| `outputs.tf`      | Output values (e.g., public IPs)                            |
+| `vpc.tf`     | Creates the VPC, public/private subnets, and enables DNS support |
 
 ---
 
