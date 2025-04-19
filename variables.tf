@@ -1,7 +1,3 @@
-variable "region" {
-  default = "us-east-1"
-}
-
 #ec2
 variable "ami_id" {
   description = "The AMI ID to use for the EC2 instances"
@@ -9,11 +5,16 @@ variable "ami_id" {
   default = "ami-0e449927258d45bc4"
 }
 
-variable "instance_type" {
-  description = "The instance type for the EC2 instances"
+variable "instance_type_web" {
+  description = "Instance type for the web server"
   type        = string
-  default     = "t2.micro"
 }
+
+variable "instance_type_db" {
+  description = "Instance type for the database server"
+  type        = string
+}
+
 
 #vpc
 variable "availability_zone_public" {
