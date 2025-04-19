@@ -41,6 +41,7 @@ The Terraform configuration sets up:
    terraform destroy
    ```
 
+---
 ## 📁 Project Structure
 
 | File              | Description                                                 |
@@ -61,3 +62,5 @@ Before using this project, make sure you have:
 - **AWS CLI** installed and configured
   ```bash
   aws configure
+
+---
