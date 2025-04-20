@@ -76,4 +76,3 @@ Before using this project, make sure you have:
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" height="40" alt="terraform logo" />
   <img src="https://www.svgrepo.com/show/353443/aws.svg" alt="AWS Logo" height="40" />
 </div>
----
