@@ -49,7 +49,7 @@ The Terraform configuration sets up:
 | `provider.tf`     | AWS provider configuration                                  |
 | `instances.tf`    | Web and DB EC2 instances                                    |
 | `security_groups.tf` |	Security group rules for web and DB instances          |
-| `variables.tf`    | Input variables (e.g., AMI ID, instance type)               |
+| `variables.tf`    | Input variables (e.g., AMI ID)               |
 | `outputs.tf`      | Output values (e.g., public IPs)                            |
 | `vpc.tf`     | Creates the VPC, public/private subnets, and enables DNS support |
 | `terraform.tfvars`     | Values for the input variables defined in variables.tf |
