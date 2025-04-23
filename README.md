@@ -17,6 +17,8 @@ The Terraform configuration sets up:
 - 🗄️ **Database EC2 instance** in the private subnet
 - 🧭 **Custom route tables** with subnet associations
 - 🔒 **Security groups** for web and DB traffic rules
+- ✨ **S3 backend** to store Terraform state remotely and securely
+- ⚖️ **DynamoDB table** for state locking and consistency
 
 ---
 
@@ -49,10 +51,12 @@ The Terraform configuration sets up:
 | `provider.tf`     | AWS provider configuration                                  |
 | `instances.tf`    | Web and DB EC2 instances                                    |
 | `security_groups.tf` |	Security group rules for web and DB instances          |
-| `variables.tf`    | Input variables (e.g., AMI ID)               |
+| `variables.tf`    | Input variables (e.g., AMI ID)                              |
 | `outputs.tf`      | Output values (e.g., public IPs)                            |
 | `vpc.tf`     | Creates the VPC, public/private subnets, and enables DNS support |
 | `terraform.tfvars`     | Values for the input variables defined in variables.tf |
+| `main.tf`     | Includes root configuration and backend reference               |
+| `s3.tf`     | Creates S3 bucket and DynamoDB table for remote state management  |
 
 
 ---
